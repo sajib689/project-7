@@ -76,6 +76,9 @@ header{
     align-items: center;
     justify-content: center;
 }
+.banner-content{
+    margin-top: 40px;
+}
 .banner-content h1{
     font-size: 45px;
     font-family: 'Poppins', sans-serif;

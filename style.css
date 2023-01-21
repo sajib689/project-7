@@ -1,0 +1,107 @@
+/* common css start from here */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+:root{
+    --primary-color: #FE6347;
+    --secondary-color: #233D62;
+    --font-color: #fff;
+}
+header{
+    background: url(./images/banner-bg.png);
+    height: 100vh;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.btn{
+    padding: 14px 24px;
+    background: var(--primary-color);
+    border: 0;
+    border-radius: 24px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* common css ends from here */
+
+/* header css start from here */
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5vh;
+}
+.header-container .header-logo img{
+    width: 70px;
+    height: 90;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav ul{
+    display: flex;
+    align-items: center;
+}
+.header-nav ul li{
+    list-style-type: none;
+}
+.header-nav ul li a{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-right: 40px;
+}
+.header-btn{
+    margin-left: 65px;
+}
+/* banner css start from here */
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content h1{
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.banner-content p{
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-top: 15px;
+    line-height: 60px;
+}
+.banner-img img{
+    width: 580px;
+}
+.hire-btn a{
+    font-size: 18px;
+    position: relative;
+}
+.hire-btn{
+    margin-top: 20px;
+    padding: 18px 35px;
+    color: var(--secondary-color);
+    
+}
+
+/* banner css ends from here */
+/* header css end from here */

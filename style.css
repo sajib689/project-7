@@ -113,6 +113,7 @@ header{
 .service-container{
     margin-top: 100px;
     height: 100vh;
+    
 }
 .service-title{
     text-align: center;
@@ -156,7 +157,30 @@ header{
 #menu-icon{
     display: none;
 }
-
+.work-heading{
+    text-align: center;
+}
+.works-container{
+    margin-top: 200px;
+    height: 100vh;
+}
+.work-heading{
+    font-size: 3rem;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 100px;
+    
+}
+.work-cards{
+    margin: 20px;
+}
+.work-cards img{
+    width: 100%;
+}
 /* banner css ends from here */
 /* header css end from here */
 
@@ -273,6 +297,15 @@ header{
     }
     .banner-content{
         text-align: center;
+    }
+    .banner-content h1{
+        text-align: center;
+    }
+    .banner-content p{
+        text-align: center;
+    }
+    .hire-btn{
+        padding: 18px 24px;
     }
 }
 /* responsive ends from here */

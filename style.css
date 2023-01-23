@@ -8,7 +8,6 @@
     margin: 0;
     text-decoration: none;
     list-style-type: none;
-    color: #fff;
 }
 
 :root{
@@ -17,7 +16,7 @@
     --font-color: #fff;
 }
 header{
-    background: url(./images/banner-bg.png);
+    background-image: url(./images/banner-bg.png);
     height: 100vh;
 }
 .wrapper{
@@ -68,6 +67,10 @@ header{
 }
 .header-btn{
     margin-left: 65px;
+    
+}
+.header-btn a{
+    color: var(--font-color);
 }
 /* banner css start from here */
 
@@ -91,6 +94,7 @@ header{
     color: var(--secondary-color);
     margin-top: 15px;
     line-height: 60px;
+    text-align: justify;
 }
 .banner-img img{
     width: 580px;
@@ -98,6 +102,7 @@ header{
 .hire-btn a{
     font-size: 18px;
     position: relative;
+    color: #fff;
 }
 .hire-btn{
     margin-top: 20px;
@@ -105,6 +110,169 @@ header{
     color: var(--secondary-color);
     
 }
+.service-container{
+    margin-top: 100px;
+    height: 100vh;
+}
+.service-title{
+    text-align: center;
+    
+}
+.service-title,p,h1{
+    line-height: 150%;
+    color: var(--secondary-color);
+    font-family: 'Raleway', sans-serif;
+}
+.service-container .service-card{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.service-container .service-card .service-cards{
+    border: 0;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px;
+    background: gray;
+    width: 320px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.service-container .service-card .service-cards img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.service-container .service-card .service-cards h3{
+    font-size: 20px;
+}
+.service-container .service-card .service-cards h3,p{
+    margin: 10px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+#menu-icon{
+    display: none;
+}
 
 /* banner css ends from here */
 /* header css end from here */
+
+/* responsive start from here */
+@media (max-width: 1100px) {
+    .wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .service-container .service-card .service-cards{
+        width: 270px;
+    }
+}
+@media (max-width: 800px){
+    .wrapper{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .banner-content{
+        margin-top: 5rem;
+    }
+    .banner-content h1{
+        font-size: 30px;
+        text-align: justify;
+    }
+    .banner-img img{
+        width: 320px;
+    }
+    .service-container .service-card .service-cards{
+        width: 350px;
+        height: 430px;
+    }
+    .service-container .service-card .service-cards img{
+        width: 165px;
+        height: 168px;
+    }
+}
+@media (max-width: 700px){
+    .wrapper{
+        max-width: 600px;
+    }
+    .banner-content h1{
+        font-size: 25px;
+    }
+    .banner-img img{
+        width: 275px;
+    }
+    .service-container .service-card{
+        flex-direction: column;
+    }
+    .service-container .service-card .service-cards img{
+        width: 290px;
+        height: 270px;
+    }
+    .service-container .service-card .service-cards{
+        width: 100%;
+        height: 100%;
+    }
+    .header-nav{
+        position: relative;
+    }
+   
+    .header-nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--secondary-color);
+        position: absolute;
+        left: 0;
+        right: 0;
+        
+        
+    }
+    .header-nav ul li{
+        margin: 10px;
+    }
+    .header-nav ul li a{
+        color: #bbb;
+        width: 100%;
+        height: 100%;
+        padding: 10rem;
+
+    }
+    .header-btn {
+        margin-left: -18px;
+      }
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+    
+    
+}
+@media (max-width: 600px) {
+    .wrapper{
+        max-width: 500px;
+    }
+    .banner-content p{
+        line-height: 42px;
+    }
+}
+@media (max-width: 400px) {
+    .wrapper{
+        max-width: 300px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-img img{
+        display: none;
+    }
+    .banner-content{
+        text-align: center;
+    }
+}
+/* responsive ends from here */

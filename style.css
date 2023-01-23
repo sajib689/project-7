@@ -350,7 +350,11 @@ header{
     .hidden{
         display: none;
     }
-    
+    .works-container{
+        margin-top: 200px;
+        height: 100vh;
+        display: none;
+    }
     
 }
 @media (max-width: 600px) {

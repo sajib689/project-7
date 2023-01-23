@@ -313,7 +313,7 @@ header{
     }
     .service-container .service-card .service-cards{
         width: 100%;
-        height: 100%;
+       
     }
     .header-nav{
         position: relative;
@@ -324,11 +324,7 @@ header{
         justify-content: center;
         align-items: center;
         background: var(--secondary-color);
-        position: absolute;
-        left: 0;
-        right: 0;
-        
-        
+   
     }
     .header-nav ul li{
         margin: 10px;
@@ -350,11 +346,7 @@ header{
     .hidden{
         display: none;
     }
-    .works-container{
-        margin-top: 200px;
-        height: 100vh;
-        display: none;
-    }
+    
     
 }
 @media (max-width: 600px) {
